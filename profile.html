@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link rel="stylesheet" type="text/css" href="styledup.css" /> -->
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body id="body">
+     <!-- header starts here -->
+   
+     <nav style="margin-bottom: 20px;">
+        <div class="container">
+          <h2>&Escr;&Mscr;&escr;&dscr;&iscr;&ascr;</h2>
+
+          <div class="search-bar">
+            <i class="uil uil-search"></i>
+            <input type="search" placeholder="Search">
+          </div>
+          <div class="profile-image">
+            <img src="images/pic.jpg" 
+                style=" width: 2rem;
+                       height: 2rem;
+                       border: 3px solid #937DC2;
+                border-radius: 1rem;" >
+         </div>
+         <p>Sign out</p>
+        </div>
+      </nav>
+   
+    <!-- header section ends Here -->
+    <div class="container"  style="margin-top: 100px;">
+    <div class="left">
+        <div>
+            <a class="profile">
+                <div>
+                    <img id='profile'src="" width="30px" height="30px" style="border-radius: 15px;">
+                </div>
+                <div class="handle">
+                    <h4><span id="result"></span></h4>
+                   
+                </div>
+            </a>
+        </div>
+    <ul>
+        <li class="active"><a href="home.html" ><span><i class="uil uil-estate"></i></span> <span class="txt">Home</span></a></li>
+        <li><a href="profile.html"><span><i class="uil uil-user"></i></span><span class="txt">Profile</span></a></li>
+        <li><a href="" id="notification"><span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span><span class="txt">Notifications</span></a> 
+            <!-- Notification Popup -->
+        <div class="notification-popup">
+
+            <div>
+            <div class="profile-image">
+                <img src="images/Bridal Beauty.jpg" >
+            </div>
+            <div class="notification-body">
+                <b>Trevor Thomas</b> accepted Your Friend request
+                <small class="text-muted">2 MINUTES AGO</small>
+            </div>
+        </div>
+        
+            <div>
+        <div class="profile-image">
+            <img src="images/best-pimped-cars-in-the-world-pictures.jpg" >
+        </div>
+        <div class="notification-body">
+            <b>Colin Lubembe</b> liked your post
+            <small class="text-muted">1 DAY AGO</small>
+        </div> 
+    </div>
+
+        <div>
+            <div class="profile-image">
+                <img src="images/content-couple.gif" >
+            </div>
+            <div class="notification-body">
+                <b>Lexy Evelyn</b> invited you to like their page
+                <small class="text-muted">3 DAYS AGO</small>
+            </div>
+        </div>
+
+            <div>
+        <div class="profile-image">
+            <img src="images/Canon Lens.jpg" >
+        </div>
+        <div class="notification-body">
+            <b>Kato Maxwell</b> accepted Your Friend request
+            <small class="text-muted">1 WEEK AGO</small>
+             </div>
+            </div>
+
+         </div>          
+        </li>
+         
+        <li><a href="" id="message-notification"><span><i class="uil uil-envelope"><small class="notification-count">6</small></i></span><span class="txt">Messages</span></a></li>
+        <li><a href=""><span><i class="uil uil-users-alt"></i></span><span class="txt">Friends and groups</span></a></li>
+        <li><a href=""><span><i class="uil uil-bookmark"></i></span><span class="txt">Bookmarks</span></a></li>
+        <li><a href=""><span><i class="uil uil-palette"></i></span><span class="txt">Theme</span></a></li>
+        <li><a href=""><i class="uil uil-setting"></i></span><span class="txt">Settings</span></a></li>
+    </ul>
+    </div>
+</div>
+    <div class="middle container" style="border: 3px solid #937DC2;
+    position: absolute;
+    margin-top: 0px;
+    top: 140px;
+    left: 340px;
+    width: 70%;
+    height: 70%;
+    border-radius: 15px;
+    text-align: center;
+    padding-right: 70px;
+    ">
+          <center><div id="profileinfo">
+            <h3>Personal Details</h3>
+            <form id="form" method="POST" action="profile.html">
+            <table  >
+                <tr id="row1">
+                   <td>Name: </td>
+                   <td id="td1">
+                     <span id="name"></span>
+                   </td>
+                   <td>
+                    <button onclick='edit()' id="button1">Edit</button>
+                </td>
+                </tr>
+                <tr id="row2">
+                   <td>Email Address: </td>
+                   <td>
+                    <span id="email"></span>
+                   </td>
+                   <td>
+                    <button>Edit</button>
+                   </td>
+                </tr>
+                <tr id="row3">
+                    <td>Statement: </td>
+                    <td>
+                       <span id="statement"></span>
+                    </td>
+                    <td>
+                        <button>Edit</button>
+                       </td>
+                </tr>
+            </table>
+           
+            <p><strong>Education details</strong></p>
+
+            <table>
+               <tr id="row4">
+                <td>
+                    University: 
+                </td>
+                <td>
+                    <span id="uni"></span>
+                </td>
+               </tr>
+               <tr id="row5">
+                <td>
+                    Secondary: 
+                </td>
+                <td>
+                    <span id="sec"></span>
+                </td>
+                <td>
+                    <button>Edit</button>
+                   </td>
+               </tr>
+               <tr id="row6">
+                <td>
+                    Primary: 
+                </td>
+                <td>
+                    <span id="pri"></span>
+                </td>
+                <td>
+                    <button>Edit</button>
+                   </td>
+               </tr>
+               <tr id="row7">
+                <td>
+                    Hobbies: 
+                </td>
+                
+                <td>
+                    <span id="hobby"></span>
+                </td>
+                <td>
+                    <button>Edit</button>
+                   </td>
+               </tr>
+            </table></form>
+            <hr>
+         </div></center>
+    </div>
+     
+     
+     
+     
+     <script src="profile.js">
+
+     </script>
+   
+</body>
+</html>
